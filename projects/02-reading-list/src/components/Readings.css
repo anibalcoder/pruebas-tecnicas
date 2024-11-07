@@ -1,0 +1,7 @@
+aside {
+  display: none;
+}
+
+label ~ input:checked ~ aside {
+  display: flex;
+}
