@@ -1,0 +1,5 @@
+node_modules
+.DS_Store
+projects/**/.DS_Store
+projects/**/.env
+projects/**/dist
