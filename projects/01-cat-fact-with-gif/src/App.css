@@ -1,0 +1,53 @@
+.catFactWithGif {
+  border: 2px solid blue;
+  border-radius: .75rem;
+  overflow: hidden;
+  width: min(95%, 900px);
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+
+  .catFactWithGif__button {
+    font-size: 13px;
+    background-color: #eee;
+    color: black;
+    font-weight: bold;
+    padding: .75rem 1rem;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #111;
+      color: white;
+      transition: 
+        background-color 300ms ease-in-out,
+        color 300ms ease-in-out;
+    }
+  }
+
+  .catFactWithGif__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    .catFactWithGif__image {
+      width: min(100%, 350px);
+      object-fit: cover;
+      object-position: center;
+      aspect-ratio: 1/1;
+      border-radius: .75rem;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .catFactWithGif__content {
+    flex-direction: column;
+  }
+}
