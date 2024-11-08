@@ -1,11 +1,14 @@
 import { useId, useContext } from 'react'
 import { ReadingsContext } from '../context/readings'
 import { ReadingsIcon, RemoveFromReadingIcon } from './Icons'
+import { setStoredReadings } from '../storage/readings'
 import './Readings.css'
 
 export function Readings () {
   const { readings, setReadings } = useContext(ReadingsContext)
   const checkReadingId = useId()
+
+  setStoredReadings(readings)
 
   function removeFromReading (book) {
     const newReadings = readings.filter(item => item.ISBN !== book.ISBN)
