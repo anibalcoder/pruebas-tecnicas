@@ -1,15 +1,16 @@
-import { createContext, useState } from 'react'
-import { getStoredReadings } from '../storage/readings'
+import { createContext } from 'react'
+import { useReadings } from '../hooks/useReadings'
 
 const ReadingsContext = createContext()
 
 function ReadingsProvider ({ children }) {
-  const [readings, setReadings] = useState(getStoredReadings ?? [])
+  const { state, addToReadings, removeFromReadings } = useReadings()
 
   return (
     <ReadingsContext.Provider value={{
-      readings,
-      setReadings
+      readings: state,
+      addToReadings,
+      removeFromReadings
     }}
     >
       {children}

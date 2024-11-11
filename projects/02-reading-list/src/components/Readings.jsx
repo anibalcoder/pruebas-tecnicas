@@ -1,19 +1,11 @@
 import { useId, useContext } from 'react'
 import { ReadingsContext } from '../context/readings'
 import { ReadingsIcon, RemoveFromReadingIcon } from './Icons'
-import { setStoredReadings } from '../storage/readings'
 import './Readings.css'
 
 export function Readings () {
-  const { readings, setReadings } = useContext(ReadingsContext)
+  const { readings, removeFromReadings } = useContext(ReadingsContext)
   const checkReadingId = useId()
-
-  setStoredReadings(readings)
-
-  function removeFromReading (book) {
-    const newReadings = readings.filter(item => item.ISBN !== book.ISBN)
-    setReadings(newReadings)
-  }
 
   return (
     <section className='fixed right-0 top-0 z-50'>
@@ -52,7 +44,7 @@ export function Readings () {
                   />
 
                   <button
-                    onClick={() => removeFromReading(book)}
+                    onClick={() => removeFromReadings(book)}
                     className='bg-blue-800 absolute top-2 right-3 p-2 rounded-full hover:scale-110 transition-transform duration-300 cursor-pointer'
                   >
                     <RemoveFromReadingIcon />
