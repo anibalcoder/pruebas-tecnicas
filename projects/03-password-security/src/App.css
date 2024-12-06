@@ -1,0 +1,62 @@
+.credentials {
+  position: relative;
+  border: 2px solid hsl(240, 4%, 79%);
+  border-radius: 1rem;
+  padding: 2rem 2.5rem;
+}
+
+.credentials__form-message {
+  background-color: burlywood;
+  border-radius: .5rem;
+  position: absolute;
+  top: -10px;
+  right: -15px;
+  padding: .5rem .75rem;
+}
+
+.credentials__title {
+  color: hsl(48, 96%, 53%);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.credentials__form-group {
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  margin-top: 2rem;
+}
+
+.credentials__input {
+  border: 1px solid orange;
+  border-radius: .5rem;
+  padding: .75rem;
+}
+
+.credentials__button {
+  width: 160px;
+  color: white;
+  border: none;
+  border-radius: .5rem;
+  padding: .75rem;
+  margin: auto;
+  cursor: pointer;
+  transition: background-color 150ms linear;
+
+  &:hover {
+    background-color: black;
+  }
+}
+
+.credentials__button--toggle-password { background-color: hsl(210, 7%, 39%); }
+.credentials__button--validate { background-color: hsl(152, 69%, 27%); }
+.credentials__button--clear { background-color: hsl(216, 90%, 44%); }
+
+.credentials__password-strength,
+.credentials__email-message {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.valid-email { color: limegreen; }
+.invalid-email { color: red; }

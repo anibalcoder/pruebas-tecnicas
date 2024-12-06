@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --body-font: system-ui, sans-serif;
+  --body-bg: hsl(240, 3%, 94%);
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--body-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
