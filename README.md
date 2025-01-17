@@ -11,6 +11,7 @@ Incluye desafíos y ejercicios basados en preguntas técnicas reales 📋, dise�
 | `01` | Cat fact with gif | [Código](projects/01-cat-fact-with-gif/) |
 | `02` | Reading list | [Código](projects/02-reading-list/) | [Visitar](https://lista-de-lecturas.netlify.app/) |
 | `03` | Password security | [Código](projects/03-password-security/) |
+| `04` | Add and delete items | [Código](projects/04-add-items-react/) |
 
 ## 🔧 Instalación
 
