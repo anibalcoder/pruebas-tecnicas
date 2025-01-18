@@ -1,11 +1,10 @@
-import { Todos, TodoId } from "../types"
+import { useAppSelector } from "../hooks/store"
+import { useTodoActions } from "../hooks/useTodoActions"
 
-interface Props {
-  todos: Todos
-  HandleDeleteTodo: (id: TodoId) => void
-}
+export const ListOfTodos = () => {
+  const todos = useAppSelector(state => state.todos)
+  const { deleteTodo } = useTodoActions()
 
-export const ListOfTodos: React.FC<Props> = ({ todos, HandleDeleteTodo }) => {
   return (
     <section className='w-full'>
       <h2 className='text-2xl text-black/80 font-semibold mb-3'>
@@ -21,7 +20,7 @@ export const ListOfTodos: React.FC<Props> = ({ todos, HandleDeleteTodo }) => {
               todos.map(({ id, title }) => (
                 <li
                   key={id}
-                  onClick={() => HandleDeleteTodo(id)}
+                  onClick={() => deleteTodo(id)}
                   className='bg-[#14334d] text-white p-3 rounded-md cursor-pointer hover:bg-red-500'
                   title='Eliminar'
                 >

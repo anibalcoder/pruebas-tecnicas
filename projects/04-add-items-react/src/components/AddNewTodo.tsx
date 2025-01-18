@@ -1,10 +1,9 @@
+import { useTodoActions } from "../hooks/useTodoActions"
 import { TodoTitle } from "../types"
 
-interface Props {
-  handleAddTodo: (title: TodoTitle) => void
-}
+export const AddNewTodo = () => {
+  const { addTodo } = useTodoActions()
 
-export const AddNewTodo: React.FC<Props> = ({ handleAddTodo }) => {
   function handleSubmitTodo (
     event: React.FormEvent<HTMLFormElement>
   ) {
@@ -14,10 +13,9 @@ export const AddNewTodo: React.FC<Props> = ({ handleAddTodo }) => {
     const formData = new FormData(form)
     const title = formData.get('todo') as TodoTitle
 
-    handleAddTodo(title)
+    addTodo(title)
     form.reset()
   }
-
 
   return (
     <form

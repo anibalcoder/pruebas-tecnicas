@@ -1,13 +1,21 @@
+import React from 'react'
 import { describe, test, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import { userEvent } from '@testing-library/user-event'
-import App from '../App'
+import App from '../src/App'
+
+import { Provider } from 'react-redux'
+import { store } from '../src/store'
 
 describe('App', () => {
   test('should add and delete tasks', async () => {
     const user = userEvent.setup()
 
-    render(<App />)
+    render(
+      <Provider store={store}>
+        <App />
+      </Provider>
+    )
 
     const form = screen.getByRole('form')
     expect(form).toBeDefined()
