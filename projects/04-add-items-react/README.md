@@ -13,4 +13,4 @@
 - [✅] El código debe ser enteramente desarrollado en TypeScript.
 
 > [!IMPORTANT]
-> El enunciado de la prueba técnica fue tomado del video de ![midudev](https://www.youtube.com/watch?v=JW_x-Tq5Vt0&t=3547s)
+> El enunciado de la prueba técnica fue tomado del video de [midudev](https://www.youtube.com/watch?v=JW_x-Tq5Vt0&t=3547s)
