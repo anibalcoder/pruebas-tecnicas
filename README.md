@@ -12,6 +12,7 @@ Incluye desafíos y ejercicios basados en preguntas técnicas reales 📋, dise�
 | `02` | Reading list | [Código](projects/02-reading-list/) | [Visitar](https://lista-de-lecturas.netlify.app/) |
 | `03` | Password security | [Código](projects/03-password-security/) |
 | `04` | Add and delete items | [Código](projects/04-add-items-react/) |
+| `05` | Movie search | [Código](projects/05-movie-search/) |
 
 ## 🔧 Instalación
 
