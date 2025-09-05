@@ -9,6 +9,9 @@ Crea una aplicación para buscar películas
 
 API a usar ( [https://www.omdbapi.com/](https://www.omdbapi.com/) ) - Consigue la API Key en la propia página web registrando tu email.
 
+> [!IMPORTANT]
+> Copia el archivo `.env.example` y renómbralo como `.env`. Abre el nuevo archivo `.env` y reemplaza el valor de `your_api_key_here` por tu API Key real.
+
 ### Requerimientos
 
 1. Necesita mostrar un input para buscar la película y un botón para buscar.
