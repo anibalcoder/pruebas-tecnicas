@@ -29,30 +29,30 @@ API a usar ( [https://www.omdbapi.com/](https://www.omdbapi.com/) ) - Consigue l
 ### Segunda iteración
 
 1. Reglas de búsqueda:
-    - **Búsqueda vacías**
-        
-        👉 Mostrar mensaje: *“No se puede buscar una película vacía”*
-        
-    - **Búsqueda inexistente**
-        
-        👉 Mostrar mensaje: *“No se encontraron películas para esta búsqueda”*
-        
-    - **Menos de 3 caracteres**
-        
-        👉 Mostrar mensaje: *“La búsqueda debe tener al menos 3 caracteres”*
-        
-    - **Comienza con número**
-        
-        👉 Mostrar mensaje: *“No se puede buscar una película con un número”*
-        
-2. Crear un botón con la etiqueta **“Ordenar”** que permita organizar las películas en orden alfabético**.**
+	- **Búsqueda vacías**
+
+		👉 Mostrar mensaje: *“No se puede buscar una película vacía”*
+
+	- **Búsqueda inexistente**
+
+		👉 Mostrar mensaje: *“No se encontraron películas para esta búsqueda”*
+
+	- **Menos de 3 caracteres**
+
+		👉 Mostrar mensaje: *“La búsqueda debe tener al menos 3 caracteres”*
+
+	- **Comienza con número**
+
+		👉 Mostrar mensaje: *“No se puede buscar una película con un número”*
+
+2. Crear un botón con la etiqueta **“Ordenar”** que permita organizar las películas en orden **alfabético**.
 
 ### Prototipo
 
 - **Desktop**
-    
-    ![image.png](./public/desktop.webp)
-    
+
+  ![desktop-prototype](./public/desktop-prototype.webp)
+
 - **Mobile**
-    
-    ![image.png](./public/mobile.webp)
+
+  ![mobile-prototype](./public/mobile-prototype.webp)

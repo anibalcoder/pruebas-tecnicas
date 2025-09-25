@@ -1,5 +1,8 @@
 # Añadir y eliminar elementos de una lista (React)
 
+> [!NOTE]
+> El enunciado de la prueba técnica fue tomado del [video](https://www.youtube.com/watch?v=JW_x-Tq5Vt0&t=3547s) de midudev.
+
 ## Enunciado
 
 - [✅] Crear una app en React que implemente un campo de texto y botón para añadir un elemento.
@@ -12,5 +15,8 @@
 
 - [✅] El código debe ser enteramente desarrollado en TypeScript.
 
-> [!IMPORTANT]
-> El enunciado de la prueba técnica fue tomado del video de [midudev](https://www.youtube.com/watch?v=JW_x-Tq5Vt0&t=3547s)
+## Prototipo
+
+- **Desktop**
+
+  ![desktop-prototype](./public/desktop-prototype.webp)
