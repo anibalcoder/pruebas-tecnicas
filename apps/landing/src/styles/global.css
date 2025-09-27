@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@import '@fontsource-variable/inter';
+
+@theme {
+  /* ========= Fonts ========= */
+  --font-inter: 'Inter Variable', sans-serif;
+
+  /* ========= COLORS ======== */
+  --color-highlight-yellow: #FFD475;
+  --color-hero-repo-link: #FADA7A;
+}

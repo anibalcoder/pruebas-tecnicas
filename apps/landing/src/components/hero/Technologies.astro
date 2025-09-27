@@ -1,0 +1,43 @@
+---
+import {
+  JavaScriptIcon,
+  TypeScriptIcon,
+  ReactIcon,
+  TailwindIcon,
+  PlaywrightIcon,
+  VitestIcon
+} from "@components/icons";
+---
+
+<div
+  class={`w-full flex flex-col gap-2 technologies`}
+>
+  <div class="flex items-center justify-center gap-12">
+    <PlaywrightIcon class="size-12" />
+    <TailwindIcon class="size-12" />
+  </div>
+
+  <div class="flex items-center justify-between">
+    <ReactIcon class="size-10" />
+    <VitestIcon class="size-10" />
+  </div>
+
+  <div class="flex items-center justify-center gap-4">
+    <JavaScriptIcon class="size-8" />
+    <TypeScriptIcon class="size-8" />
+  </div>
+</div>
+
+<style>
+  .technologies {
+    position: absolute;
+    top: -2rem;
+    animation: moveTop 4000ms linear infinite alternate;
+  }
+
+  @keyframes moveTop {
+    to {
+      transform: translateY(-1rem);
+    }
+  }
+</style>

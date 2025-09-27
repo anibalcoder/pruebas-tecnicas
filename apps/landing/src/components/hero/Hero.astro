@@ -1,0 +1,18 @@
+---
+import Presentation from "./Presentation.astro";
+import Box from "./Box.astro";
+import Technologies from "./Technologies.astro";
+---
+
+<section
+  class="flex flex-col lg:flex-row items-center justify-center gap-x-52 gap-y-12 py-36 px-6"
+>
+  <Presentation />
+  
+  <div
+    class="relative size-60 -order-1 lg:order-1"
+  >
+    <Box class="size-full drop-shadow-2xl drop-shadow-red-500/40" />
+    <Technologies />
+  </div>
+</section>

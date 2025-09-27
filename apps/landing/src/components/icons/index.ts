@@ -1,0 +1,7 @@
+export { default as GitHubIcon } from "@components/icons/GitHub.astro"
+export { default as JavaScriptIcon } from "@components/icons/JavaScript.astro"
+export { default as TypeScriptIcon } from "@components/icons/TypeScript.astro"
+export { default as ReactIcon } from "@components/icons/React.astro"
+export { default as TailwindIcon } from "@components/icons/Tailwind.astro"
+export { default as PlaywrightIcon } from "@components/icons/Playwright.astro"
+export { default as VitestIcon } from "@components/icons/Vitest.astro"
