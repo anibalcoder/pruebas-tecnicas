@@ -1,0 +1,25 @@
+---
+import Nav from "./Nav.astro"
+import SocialNetworks from "./SocialNetworks.astro"
+---
+
+<header
+  class="sticky top-0 z-50 backdrop-blur-2xl"
+>
+  <div class="flex items-center justify-between gap-x-12 gap-y-5 px-4 pt-7 pb-4 mx-auto max-w-7xl">
+    <a
+      class="size-10 transition-transform hover:scale-125"
+      href="/"
+      aria-label="Ir al inicio"
+    >
+      <img
+        src="./favicon.svg"
+        alt="logotipo"
+        class="size-full"
+      >
+    </a>
+
+    <Nav />
+    <SocialNetworks />
+  </div>
+</header>

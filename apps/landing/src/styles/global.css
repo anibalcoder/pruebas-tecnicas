@@ -6,6 +6,8 @@
   --font-inter: 'Inter Variable', sans-serif;
 
   /* ========= COLORS ======== */
+  --color-gradient-body-start: #040B20;
+  --color-gradient-body-end: #0E1B40;
   --color-highlight-yellow: #FFD475;
   --color-hero-repo-link: #FADA7A;
 }

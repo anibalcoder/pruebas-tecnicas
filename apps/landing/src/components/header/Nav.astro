@@ -1,0 +1,26 @@
+---
+const navLinks = [
+  {
+    href: "#collab",
+    label: "Colaborar"
+  },
+  {
+    href: "#projects",
+    label: "Proyectos"
+  },
+]
+---
+
+<nav
+  aria-label="Navegación principal"
+>
+  <ul class="flex gap-6 text-white">
+    {
+      navLinks.map(({ href, label }) => (
+        <li>
+          <a href={ href }>{ label }</a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>

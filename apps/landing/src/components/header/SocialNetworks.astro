@@ -1,0 +1,51 @@
+---
+import { GitHubIcon, LinkedInIcon, EmailIcon } from "@components/icons"
+
+const socialLinks = [
+  {
+    href: "https://github.com/anibalcoder/",
+    label: "Ir a mi GitHub",
+    target: "_blank",
+    icon: GitHubIcon
+  },
+  {
+    href: "https://www.linkedin.com/in/anibalcoder",
+    label: "Ir a mi LinkedIn",
+    target: "_blank",
+    icon: LinkedInIcon
+  },
+  {
+    href: "mailto:enciso0210@gmail.com",
+    label: "Contáctame",
+    target: "_self",
+    icon: EmailIcon
+  },
+]
+---
+
+<ul
+  class="hidden sm:flex justify-center items-center gap-4 text-white"
+  aria-label="Redes sociales"
+>
+  {
+    socialLinks.map(({
+      href,
+      label,
+      target,
+      icon: Icon
+    }) => (
+      <li class="flex">
+        <a
+          class="inline-block transition-transform hover:scale-125"
+          href={ href }
+          target={ target }
+          rel="noopener noreferrer"
+          aria-label={ label }
+          title={ label }
+        >
+          <Icon />
+        </a>
+      </li>
+    ))
+  }
+</ul>

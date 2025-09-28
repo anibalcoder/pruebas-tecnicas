@@ -1,4 +1,5 @@
 ---
+import Header from "@components/header/Header.astro";
 import "../styles/global.css";
 ---
 
@@ -11,7 +12,8 @@ import "../styles/global.css";
     <meta name="generator" content={Astro.generator} />
     <title>Astro Basics</title>
   </head>
-  <body class={ `min-h-screen w-full font-inter bgGridOverlay` }>
+  <body class="min-h-screen w-full font-inter bg-linear-180 from-gradient-body-start to-gradient-body-end">
+    <Header />
     <main>
 			<slot />
 		</main>
@@ -19,8 +21,7 @@ import "../styles/global.css";
 </html>
 
 <style>
-  .bgGridOverlay {
-    background-image: 
-      linear-gradient(180deg, #040B20 0%, #0E1B40 100%);
+  :root {
+    scroll-behavior: smooth;
   }
 </style>
