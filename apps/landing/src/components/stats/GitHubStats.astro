@@ -1,0 +1,69 @@
+---
+import { CommitIcon, StarIcon } from "@components/icons";
+import { GitHubMetricValue } from "./GitHubMetricValue";
+import ContributeCard from "./ContributeCard.astro"
+
+const repositoryStats = [
+  {
+    gridArea: "commits",
+    label: "commits",
+    icon: CommitIcon,
+    iconClass: "size-6 text-blue-400",
+  },
+  {
+    gridArea: "stars",
+    label: "estrellas",
+    icon: StarIcon,
+    iconClass: "size-6 text-yellow-400",
+  },
+]
+---
+
+<ul class="github-stats-grid">
+  {
+    repositoryStats.map(({
+      gridArea,
+      label,
+      icon: Icon,
+      iconClass
+    }) => (
+      <li
+        class={`bg-white/14 border border-white/14 flex flex-col justify-between items-center p-6 rounded-2xl ${ gridArea }`}
+      >
+        <Icon class={`${ iconClass }`} />
+
+        <GitHubMetricValue client:load metricType={ label } />
+
+        <span class="text-sm text-secondary capitalize">{ label }</span>
+      </li>
+    ))
+  }
+
+  <li class="contribute">
+    <ContributeCard />
+  </li>
+</ul>
+
+<style>
+  .github-stats-grid {
+    display: grid;
+    row-gap: 1.5rem;
+    column-gap: 2rem;
+    grid-template: 
+      "contribute" 1fr
+      "commits"    10rem
+      "stars"      10rem / 1fr;
+  }
+
+  .commits { grid-area: commits; }
+  .stars { grid-area: stars; }
+  .contribute { grid-area: contribute; }
+
+  @media screen and (width >= 564px) {
+    .github-stats-grid {
+      grid-template: 
+        "commits contribute" 10rem
+        "stars   contribute" 10rem / 15.125rem 15.125rem;
+    }
+  }
+</style>

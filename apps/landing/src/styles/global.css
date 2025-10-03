@@ -2,12 +2,38 @@
 @import '@fontsource-variable/inter';
 
 @theme {
-  /* ========= Fonts ========= */
+  /* =============================== */
+  /* ========= Font Family ========= */
+  /* =============================== */
   --font-inter: 'Inter Variable', sans-serif;
 
-  /* ========= COLORS ======== */
-  --color-gradient-body-start: #040B20;
-  --color-gradient-body-end: #0E1B40;
-  --color-highlight-yellow: #FFD475;
-  --color-hero-repo-link: #FADA7A;
+  /* =============================== */
+  /* ========== Font Size ========== */
+  /* =============================== */
+  --text-subtitle: clamp(1.75rem, 3vw, 2.25rem);
+  --text-description: clamp(1rem, 3vw, 1.25rem);
+
+  /* =============================== */
+  /* ============ Colors =========== */
+  /* =============================== */
+  --color-gradient-body-start: hsl(225, 78%, 7%);
+  --color-gradient-body-end: hsl(224, 64%, 15%);
+  --color-hero-repo-link: hsl(45, 93%, 73%);
+  --color-stats-repo-link: hsl(225, 84%, 49%);
+  --color-highlight-yellow: hsl(41, 100%, 73%);
+  --color-highlight-blue: hsl(205, 98%, 63%);
+  --color-secondary: hsl(205, 12%, 80%);
+}
+
+@layer components {
+  .gradient-card {
+    border: 1px solid hsla(205, 97%, 85%, .2);
+    background: linear-gradient(
+      180deg, hsla(0, 0%, 100%, .08), hsla(0, 0%, 100%, .01) 75%
+    );
+    box-shadow:
+      inset 0 2px 16px 0 hsla(205, 97%, 85%, 0.06),
+      inset 0 2px 32px 0 hsla(205, 98%, 80%, 0.06),
+      inset 0 2px 48px 0 hsla(205, 98%, 60%, 0.04);
+  }
 }

@@ -1,0 +1,40 @@
+---
+import { ExternalLinkIcon } from "@components/icons";
+import type { Project } from "./ProjectGrid.astro"
+
+interface Props extends Project {}
+
+const { title, repoUrl, imgUrl, imgScale } = Astro.props;
+---
+
+<article
+  class="rounded-2xl h-full gradient-card"
+>
+  <figure class="px-4 pt-4">
+    <div class="rounded-xl overflow-hidden">
+      <img
+        style={`transform: scale(${ imgScale });`}
+        class="w-full h-52 object-top object-cover"
+        src={ imgUrl }
+        alt={`Vista previa del proyecto - ${ title }`}
+      />
+    </div>
+  </figure>
+
+  <div class="p-6">
+    <h3 class="text-highlight-yellow font-bold text-xl mb-4">
+      { title }
+    </h3>
+
+    <a
+      class="bg-stats-repo-link hover:bg-hero-repo-link w-max text-sm text-white hover:text-black/90 font-bold flex items-center gap-2 px-3 py-2 rounded-md transition-colors"
+      href={ repoUrl }
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={`Abrir el repositorio de ${ title } en GitHub`}
+    >
+      <ExternalLinkIcon class="size-4" />
+      Más información
+    </a>
+  </div>
+</article>

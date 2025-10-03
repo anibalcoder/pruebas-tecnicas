@@ -1,0 +1,63 @@
+---
+import ProjectCard from "./ProjectCard.astro"
+
+export interface Project {
+  title: string
+  repoUrl: string
+  imgUrl: string
+  imgScale: number
+}
+
+const projectList: Project[] = [
+  {
+    title: "Datos sobre gatos con gif",
+    repoUrl: "https://github.com/anibalcoder/pruebas-tecnicas/tree/develop/projects/01-cat-fact-with-gif",
+    imgUrl: "/projects/01-cat-fact-with-gif.webp",
+    imgScale: 1.82,
+  },
+  {
+    title: "Lista de lectura",
+    repoUrl: "https://github.com/anibalcoder/pruebas-tecnicas/tree/develop/projects/02-reading-list",
+    imgUrl: "/projects/02-reading-list.webp",
+    imgScale: 1,
+  },
+  {
+    title: "Seguridad de contraseña",
+    repoUrl: "https://github.com/anibalcoder/pruebas-tecnicas/tree/develop/projects/03-password-security",
+    imgUrl: "/projects/03-password-security.webp",
+    imgScale: 2,
+  },
+  {
+    title: "Todo App",
+    repoUrl: "https://github.com/anibalcoder/pruebas-tecnicas/tree/develop/projects/04-add-items-react",
+    imgUrl: "/projects/04-add-and-delete-items.webp",
+    imgScale: 2,
+  },
+  {
+    title: "Buscador de películas",
+    repoUrl: "https://github.com/anibalcoder/pruebas-tecnicas/tree/develop/projects/05-movie-search",
+    imgUrl: "/projects/05-movie-search.webp",
+    imgScale: 1.25,
+  },
+]
+---
+
+<ol class="projects-grid w-full">
+  {
+    projectList.map(project => (
+      <li>
+        <ProjectCard { ...project } />
+      </li>
+    ))
+  }
+</ol>
+
+<style>
+  .projects-grid {
+    display: grid;
+    column-gap: 2rem;
+    row-gap: 2.25rem;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 350px));
+  }
+</style>

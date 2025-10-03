@@ -1,0 +1,26 @@
+---
+import { StarIcon } from "@components/icons";
+---
+
+<article
+  class="h-full flex flex-col items-center justify-center gap-6 p-6 rounded-2xl gradient-card"
+>
+  <h3 class="text-white font-bold text-xl text-center">
+    ¿Te gusta este proyecto?
+  </h3>
+
+  <p class="text-sm text-balance text-secondary text-center">
+    Ayúdame a crecer dándole una estrella al repositorio y compartiendo con otros desarrolladores
+  </p>
+
+  <a
+    class="bg-stats-repo-link text-sm text-white font-bold flex items-center gap-2 px-4 py-2 rounded-sm"
+    href="https://github.com/anibalcoder/pruebas-tecnicas"
+    target="_blank"
+    aria-label="Visitar el repositorio en GitHub y dar una estrella"
+    rel="noopener noreferrer"
+  >
+    <StarIcon class="size-4" />
+    ¡Dale una estrella!
+  </a>
+</article>
