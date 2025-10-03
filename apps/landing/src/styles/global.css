@@ -10,6 +10,7 @@
   /* =============================== */
   /* ========== Font Size ========== */
   /* =============================== */
+  --text-title: clamp(2.25rem, 5vw, 4rem);
   --text-subtitle: clamp(1.75rem, 3vw, 2.25rem);
   --text-description: clamp(1rem, 3vw, 1.25rem);
 
@@ -23,6 +24,11 @@
   --color-highlight-yellow: hsl(41, 100%, 73%);
   --color-highlight-blue: hsl(205, 98%, 63%);
   --color-secondary: hsl(205, 12%, 80%);
+
+  /* =============================== */
+  /* ============ Spacing ========== */
+  /* =============================== */
+  --spacing-hero: calc(100vh - 64px);
 }
 
 @layer components {
