@@ -1,6 +1,13 @@
 ---
 import Header from "@components/header/Header.astro";
 import "../styles/global.css";
+
+interface Props {
+  title: string
+  description: string
+}
+
+const { title, description } = Astro.props
 ---
 
 <!doctype html>
@@ -8,9 +15,26 @@ import "../styles/global.css";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
+    <meta name="autor" content="anibalcoder">
+		<meta name="description" content={ description }>
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro Basics</title>
+    <meta name="generator" content={ Astro.generator } />
+    <title>{ title }</title>
+    <!-- Open Graph / Facebook -->
+		<meta property="og:url" content="https://pruebastecnicasdev.vercel.app/" />
+		<meta property="og:site_name" content="pruebastecnicasdev" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content={ title } />
+		<meta property="og:description" content={ description } />
+		<meta property="og:image" content="https://pruebastecnicasdev.vercel.app/website.webp" />
+    <meta property="og:image:alt" content={ title }>
+		<!-- Twitter Meta Tags -->
+		<meta name="twitter:card" content="summary" />
+		<meta property="twitter:creator" content="@anibalcoder02">
+		<meta name="twitter:title" content={ title } />
+		<meta name="twitter:description" content={ description } />
+		<meta name="twitter:image" content="https://pruebastecnicasdev.vercel.app/website.webp" />
+    <meta property="twitter:image:alt" content={ title }>
   </head>
   <body class="min-h-screen w-full font-inter bg-linear-180 from-gradient-body-start to-gradient-body-end">
     <Header />

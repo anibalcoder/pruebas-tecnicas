@@ -1,9 +1,8 @@
 <div align="center">
 
-<h1>Pruebas Técnicas</h1>
-<p>
-  Este proyecto es una <strong>landing page</strong> desarrollada como parte del repositorio <a href="https://github.com/anibalcoder/pruebas-tecnicas" title="Ir al repositorio">pruebas-tecnicas</a>, que contiene pruebas técnicas reales para mejorar las habilidades como desarrollador frontend.
-</p>
+# [Pruebas Técnicas](https://pruebastecnicasdev.vercel.app/ 'Ir al sitio web')
+
+Este proyecto es una **landing page** desarrollada como parte del repositorio [pruebas-tecnicas](https://github.com/anibalcoder/pruebas-tecnicas 'Ir al repositorio'), que contiene pruebas técnicas reales para mejorar las habilidades como desarrollador frontend.
 
 </div>
 
