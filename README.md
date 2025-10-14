@@ -55,3 +55,11 @@ Si un proyecto incluye pruebas automatizadas, puedes correrlas con:
 ```bash
 pnpm test
 ```
+
+> [!TIP]
+> Si una prueba técnica usa **Playwright** como herramienta de testing (verifica en su `package.json` que tenga `@playwright/test`) y es **la primera vez** que usas Playwright en tu equipo, ejecuta antes el siguiente comando:
+
+```bash
+# Instala los navegadores que usa Playwright para ejecutar tests
+pnpm exec playwright install
+```
