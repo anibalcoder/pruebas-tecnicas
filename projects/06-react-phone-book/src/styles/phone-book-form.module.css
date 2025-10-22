@@ -1,0 +1,23 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 300px;
+  max-width: 100%;
+
+  .containerInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: .5rem;
+
+    input {
+      padding: .5rem 1rem;
+      border-radius: .25rem;
+      border: none;
+      font-size: 14px;
+      width: calc(100% - 32px);
+    }
+  }
+}
