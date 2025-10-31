@@ -68,7 +68,7 @@ export const PhoneBookForm = ({ setContacts }: Props) => {
           placeholder,
           type
         }) => (
-          <div className={ styles.containerInput }>
+          <div className={ styles.containerInput } key={ id }>
             <label htmlFor='first-name'>{ label }:</label>
             <input
               type={ type }
